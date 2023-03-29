@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+// algorithmTraining//
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+/\* Kata #1
 
-## Available Scripts
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+\*/
 
-In the project directory, you can run:
+function simpleMultiplication(number) {
+let result = 0;
+if (number % 2 === 0) {
+result= number _ 8;
+} else {
+result = number _ 9;
+}
+return result;
+}
 
-### `npm start`
+/\* Kata # 2
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+\*/
+// thinking process
 
-### `npm test`
+/\* if flower 1 % 2 === 0 && flower 2 % 2 != 0 || flower 1 % 2 != 0 && flower 2 %2 === 0
+return true
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+else return false
+}
 
-### `npm run build`
+\*/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+function lovefunc(flower1, flower2){
+if (flower1 % 2 === 0 && flower2 % 2 != 0 || flower1 % 2 != 0 && flower2 %2 === 0){
+return true;
+} else {
+return false;
+}
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+/\* #Kata 3
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Complete the solution so that it reverses the string passed into it.
 
-### `npm run eject`
+'world' => 'dlrow'
+'word' => 'drow'
+\*/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+function solution(str){
+return str.split('').reverse().join('');
+};
