@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "git-standup": "^2.3.2"
+  }
+}
