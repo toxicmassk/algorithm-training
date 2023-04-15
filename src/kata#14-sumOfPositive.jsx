@@ -10,5 +10,5 @@ Note: if there is nothing to sum, the sum is default to 0.*/
 function positiveSum(arr) {
   const sumWithPos = (accumulator, current) =>
     accumulator + (current > 0 ? current : 0);
-  return arr.sumWithPos(sumWithPos, 0);
+  return arr.reduce(sumWithPos, 0);
 }
