@@ -1,4 +1,4 @@
-/// KATA #14 ///
+/// KATA #15 ///
 
 /* Task: 
 Given an array of integers.
