@@ -8,5 +8,7 @@ Example (Input --> Output)
 "CodEWaRs" --> [0,3,4,6] */
 
 var capitals = function (word) {
-	// Write your code here
-};
+	return word.split('')
+			   .map(function(l, i) { if (l.toUpperCase() === l) return i; })
+			   .filter(function(i) { return i != null })
+  };
