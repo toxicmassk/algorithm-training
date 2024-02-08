@@ -15,5 +15,5 @@ function capitalize(s) {
         (i % 2 == 0) ? letter.toUpperCase() : letter).join('')
     let odd = s.split('').map((letter, i) =>
         (i % 2 != 0) ? letter.toUpperCase() : letter).join('')
-    return [even, odd];
+    return [even, odd]
 };
