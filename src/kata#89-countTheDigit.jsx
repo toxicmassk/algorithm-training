@@ -20,3 +20,10 @@ the k*k that contain the digit 1 are:
 So there are 11 digits 1 for the squares of numbers between 0 and 25.
 Note that 121 has twice the digit 1.
 */
+
+function nbDig(n, d) {
+    let result = '';
+    for (let index = 0; index <= n; index++) {
+        result += index ** 2;
+    } return result.split(d).length - 1;
+}
