@@ -10,7 +10,7 @@ Output: 9.2
 Input: []
 Output: 0
 
-Input: [-2.398]
+Input:  [-2.398]
 Output: -2.398
 
 Assumptions
