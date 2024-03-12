@@ -6,7 +6,7 @@ Create a method that takes as input a name, city, and state to welcome a person.
 
 Example:
 
-['John', 'Smith'], 'Phoenix', 'Arizona'
+['John', 'Smith'],  'Phoenix', 'Arizona'
 This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!*/
 
 function sayHello(name, city, state) {
