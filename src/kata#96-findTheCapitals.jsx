@@ -6,3 +6,10 @@ Write a function that takes a single non-empty string of only lowercase and uppe
 Example (Input --> Output)
 "CodEWaRs" --> [0,3,4,6]*/
 
+var capitals = function (word) {
+    let sortedArr = [];
+    for (var i = 0; i < word.length; i++) {
+        if (word[i].toUpperCase() == word[i]) sortedArr.push(i);
+    }
+    return sortedArr;
+};
