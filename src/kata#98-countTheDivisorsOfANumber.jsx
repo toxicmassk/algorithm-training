@@ -14,3 +14,12 @@ Examples (input --> output)
 Note you should only return a number, the count of divisors. The numbers between parentheses are shown only for you to see which numbers are counted in each case.
 */
 
+function getDivisorsCnt(n) {
+    let result = 0;
+    for (let i = n; i > 0; i--) {
+        if (n % i == 0) {
+            result++
+        }
+    }
+    return result;
+}
