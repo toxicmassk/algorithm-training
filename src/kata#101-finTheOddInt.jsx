@@ -13,3 +13,11 @@ Examples
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 */
 
+function findOdd(arr) {
+    const countMap = arr.reduce((map, num) => {
+        map.set(num, (map.get(num) || 0) + 1);
+        return map;
+    }, new Map());
+    const oddNumber = [...countMap].find(([num, count]) => count % 2 !== 0)[0];
+    return oddNumber;
+}
