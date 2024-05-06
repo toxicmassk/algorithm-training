@@ -25,3 +25,8 @@ var number = function (array) {
     }
     return result;
 }
+
+// Example #2
+
+const number = array =>
+    array.map((element, index) => `${index + 1}: ${element}`);
