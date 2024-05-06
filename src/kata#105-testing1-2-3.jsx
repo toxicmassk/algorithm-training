@@ -13,3 +13,15 @@ Examples: (Input --> Output)
 ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 */
 
+// Example #1
+var number = function (array) {
+    let result = [];
+    if (array.length == 0) {
+        return [];
+    } else {
+        for (let index = 0; index < array.length; index++) {
+            array.push(index + 1 + ': ' + array[index])
+        }
+    }
+    return result;
+}
