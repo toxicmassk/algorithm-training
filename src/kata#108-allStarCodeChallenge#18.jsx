@@ -16,3 +16,11 @@ The first argument can be an empty string
 In languages with no distinct character data type, the second argument will be a string of length 1
 */
 
+function strCount(str, letter) {
+    let result = 0;
+    for (let index = 0; index < str.length; index++) {
+        if (str[index] == letter) {
+            result++;
+        }
+    } return result;
+}
