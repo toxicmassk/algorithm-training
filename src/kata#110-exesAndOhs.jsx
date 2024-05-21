@@ -12,3 +12,7 @@ XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 */
 
+const XO = str => {
+    str = str.toLowerCase().split('');
+    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
+  }
