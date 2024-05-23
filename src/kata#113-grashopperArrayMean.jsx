@@ -19,3 +19,6 @@ For an example list of 1, 3, 5, 7
 3. The mean (or average) of this list is 4
 */
 
+var findAverage = function (nums) {
+    return nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0) / nums.length;
+}
