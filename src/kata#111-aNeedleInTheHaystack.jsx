@@ -16,3 +16,7 @@ Example(Input --> Output)
 Note: In COBOL, it should return "found the needle at position 6"
 */
 
+function findNeedle(haystack) {
+    let index = haystack.findIndex(x => x == "needle")
+    return "found the needle at position " + index;
+}
