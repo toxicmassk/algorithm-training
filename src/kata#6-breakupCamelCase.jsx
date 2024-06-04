@@ -8,6 +8,7 @@ Example
 "camelCasing" => "camel Casing"
 "identifier" => "identifier"
 "" => ""
+
 */
 
 //Answer:
