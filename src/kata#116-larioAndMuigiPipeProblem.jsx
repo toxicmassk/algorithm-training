@@ -15,3 +15,10 @@ Given a list of unique numbers sorted in ascending order, return a new list so t
 Example
 Input:  1,3,5,6,7,8 Output: 1,2,3,4,5,6,7,8 */
 
+function pipeFix(n) {
+    let result = [];
+    for (let i = n[0]; i <= n[n.length - 1]; i++) {
+        result.push(i)
+    }
+    return result;
+}
