@@ -14,6 +14,5 @@ Get rid of them. Only the ending ones.
 -1050 -> -105
 Zero alone is fine, don't worry about it. Poor guy anyway */
 
-function noBoringZeros(n) {
-    // your code
-}
+noBoringZeros = n => +`${n}`.replace(/0+$/,'')
+
